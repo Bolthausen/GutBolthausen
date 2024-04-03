@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+
+<html lang="de">
+    <head>
+        <title>Startseite | Gut Bolthausen</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                background-color: lightgrey;
+                font-size: 18px;
+               
+            }
+
+            img {
+                max-height: 100%;
+                max-width:100%;
+            }
+
+            .contain {
+                object-fit: contain;
+            }
+
+            .Hintergrundbild {
+                height: 100vh;
+                width: 100%;
+                object-fit: cover;
+                filter: brightness(0.5);
+            }
+
+            .container {
+               
+                position: absolute;
+                right:32px;
+                top: 16px;
+                font-size: 24px;
+                justify-content: space-between;
+               
+            }
+
+            .menu-link {
+                color: white;
+                text-decoration: none;
+                margin-left: 16px;
+            }
+
+            .menu-link:hover {
+                text-decoration: double;
+                font-weight: 800;
+                background-color: darkgreen;
+                padding: 8px;
+                border-radius: 8px;
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.8)
+                }
+
+            .logo {
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                height: 200px;
+                width: 200px;
+
+            }
+
+            .headline {
+                position: absolute;
+                left: 50px;
+                top: 300px;
+                color: white;
+                font-size:70px;
+                width: 500px;
+                text-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
+            }
+
+            .green {
+                color: darkgreen;
+                background-color: white;
+                border-radius: 12px;
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.8)
+            }
+
+            .half-width {
+                width: 50%;
+                object-fit: contain;
+             
+            }
+
+            .half-width2 {
+                width:50%;
+                object-fit: contain;
+                text-align: left;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 45px;
+            }
+
+            .News {
+                height: 300px;
+                padding: 30px 30px;
+                display: flex;
+                gap: 100px;
+            }
+
+
+            .Über-Uns {
+                height: 300px;
+                padding: 30px 30px;
+                display: flex;
+                gap: 100px;
+                text-align: left;
+            }
+
+            .Über-Uns img {
+                width: 50%;
+                object-fit: contain;
+            }
+
+            .Angebote {
+                height: 300px;
+                padding: 30px 30px;
+                display: flex;
+                gap: 100px;
+            }
+
+            .Anfahrt {
+                height: 300px;
+                padding: 30px 30px;
+                display: flex;
+                gap: 100px;
+            }
+
+            .Kontakt {
+                text-align: center;
+            }
+
+            .text {
+                width: 50%; 
+                object-fit: contain;
+                text-align: left;
+                padding: 10px;
+            }
+
+            @media (max-width:820px) {
+                .News {
+                    flex-direction: column;
+                    align-items: center;
+                    height: unset;
+                }
+                .Über-Uns {
+                    flex-direction: column;
+                    align-items: center;
+                    height: unset;
+                   
+                    
+                }
+                .Angebote {
+                    flex-direction: column;
+                    align-items: center;
+                    height: unset;
+                }
+                .Anfahrt {
+                    flex-direction: column;
+                    align-items: center;
+                    height:unset;
+                    text-align: left;
+                    display: flex;
+                }
+                .half-width {
+                    width: unset;
+                }
+
+                .half-width2 {
+                    width: unset;
+                }
+                .text {
+                    width: unset;
+                }
+
+                .Über-Uns img {
+                    width:unset;
+                    max-height: 300px;
+                }
+
+                .container {
+                    display: none;
+                }
+
+                
+            }
+          
+
+            
+        </style>
+    </head>
+    <body>
+        <img class="Hintergrundbild" src="Hof.jpg">
+        <img src="Logo Transparent Background.png" class="logo">
+        <div class="container">
+            <a class="menu-link" href="#News">News</a>
+            <a class="menu-link" href="#Über Uns">Über Uns</a>
+            <a class="menu-link" href="#Angebote">Angebote</a>
+            <a class="menu-link" href="#Anfahrt">Anfahrt</a>
+            <a class="menu-link" href="#Kontakt">Kontakt</a>
+        </div>
+
+        <h1 class="headline">Gut Bolthausen Deine <span class="green">Auszeit</span> vom Alltag</h1>
+
+
+        <section id="News">
+            <h2> News</h2>
+            <div class="News">
+                <div class="half-width">
+                    Gut Bolthausen ist seit kurzem das neue Zuhause von rund 80 Hühnern. Täglich bieten wir leckere und frische Eier in unserem kleinen Hof-Verkaufsstand an. Seit neustem ist der Verkaufsstand 24 Stunden am Tag und 7 Tage die Woche geöffnet zum Verkauf. 
+                </div>
+
+                <img class="half-width" width="560" height="315" src="Eierstand.jpg" />
+            </div>
+        </section>
+
+        <section id="Über Uns">
+            <h2> Über Uns</h2>
+
+            <div class="Über-Uns">
+
+                <img src="Traktor.jpg" alt="Traktor" />
+                <div class="text">
+
+                    Wir sind Petra und Peter Theus und sind 2019 gemeinsam mit unseren vier Kindern nach Gut Bolthausen gezogen. Seit dem haben wir sehr viel Zeit und Aufwand in diesen Hof investiert um ihn zu unserem Zuhause zu machen. Neben uns wohnen auch noch drei Ponys, ein Pferd, fünf Kaninchen, zwei Katzen und rund 100 Hühner auf Gut Bolthausen. 
+
+                </div>
+
+            </div>
+                
+               
+            </div>
+          
+        </section>
+
+
+        <section id="Angebote">
+            <h2> Angebote</h2>
+            <div class="Angebote">
+                <div class="half-width">
+                    Noch auf der Suche nach der perfekten Location für den Geburtstag Ihres Kindes? Dann haben wir genau das Richtige für Sie! Wir bieten Kindergeburtstage auf dem Bauernhof für Kinder zwischen 4 bis 10 Jahren an. Jedes Kind ist individuell und deshalb ist bei uns auch das Programm für jedes Kind individuell gestaltbar, ganz nach den Interessen des Geburtstagskindes. Mögliche Programmpunkte umfassen ponyreiten, Traktor fahren, Ponys putzen, eine Schatzsuche, Ponys anmalen, im Stroh toben, malen, basteln und vieles mehr.
+                </div>
+
+                <img class="half-width" src="Kindergeburtstage.jpg" />
+            </div>
+        </section>
+
+        <section id="Anfahrt">
+            <h2> Anfahrt</h2>
+            <div class="Anfahrt">
+                <iframe width="560"
+                        height="315"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.3401229936!2d7.048357277096881!3d51.212809771747814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8d3e4bd576c35%3A0x349c5ca6109e0ab6!2sBolthausen%203%2C%2042329%20Wuppertal!5e0!3m2!1sen!2sde!4v1703006250086!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="half-width2">
+                    Das Gut Bolthausen ist bequem mit dem Auto über die Autobahnausfahrt der A46 Haan Ost zu erreichen. Nach Abfahrt werden Sie schon nach kurzer Fahrtzeit Ihr Ziel erreichen. Für eine umweltfreundliche Alternative bietet sich die Anreise mit dem Bus der Linie 784 an. Steigen Sie an der Haltestelle Haan, Tückmantel aus, von wo ein Fußweg von etwa 1 Kilometer Sie zum Gut Bolthausen führt.
+                </div>
+            </div>
+        </section>
+
+        <section id="Kontakt">
+            <h2> Kontakt</h2>
+            <div class="Kontakt">
+                <p>Familie Theus</p>
+                <p>Tel: +491794957571</p>
+                <p>E-Mail: gutbothausen@gmail.com</p>
+        </section>
+
+        </div>
+        <div id="footer">
+            Copyright 2024 | Gut Bolthausen
+        </div>
+
+        </div>
+        </section>
+
+    </body>
+</html>
+
